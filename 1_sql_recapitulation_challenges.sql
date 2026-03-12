@@ -19,7 +19,7 @@ WHERE country = 'Germany';
     
 -- 4. Get the full name, customer ID, and country of customers not in the US.
 
-SELECT concat(FirstName, ' ', LastName) as FullName, customerId, country
+SELECT concat(FirstName, ' ', LastName) as FullName, customerFullId, country
 FROM customer
 WHERE country NOT IN ('USA');
 
